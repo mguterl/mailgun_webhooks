@@ -57,7 +57,7 @@ module MailgunWebhooks
   #
   # Returns a boolean.
   def verify_signature(data)
-    Signature.valid?(data.merge(:api_key => api_key))
+    Signature.valid?(data.merge('api_key' => api_key))
   end
 
   # Internal: A WebhookRegistry instance.
