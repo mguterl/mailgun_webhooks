@@ -15,10 +15,10 @@ MailgunWebhooks.api_host = "yourdomain.com"
 
 ## Rack Installation
 
-If you wish to use MailgunWebhooks outside of Rails, you can leverage the same middleware used to provide Rails integration. Just add `MailgunWebhooks::App` to your middleware stack.
+If you wish to use MailgunWebhooks outside of Rails, you can leverage the same middleware used to provide Rails integration. Just add `MailgunWebhooks::Rack` to your middleware stack.
 
 ```ruby
-use MailgunWebhooks::App
+use MailgunWebhooks::Rack
 ```
 
 ## Webhooks
