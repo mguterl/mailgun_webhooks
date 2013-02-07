@@ -1,5 +1,7 @@
 # Mailgun Webhooks
 
+[![Code Climate](https://codeclimate.com/github/mguterl/mailgun_webhooks.png)](https://codeclimate.com/github/mguterl/mailgun_webhooks)
+
 Add support for acting on Mailgun webhooks to your Rack or Rails application.
 
 ## Rails Installation
