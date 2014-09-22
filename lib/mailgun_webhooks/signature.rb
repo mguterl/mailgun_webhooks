@@ -11,7 +11,7 @@ module MailgunWebhooks
       api_key   = data.fetch('api_key')
       timestamp = data.fetch('timestamp')
       token     = data.fetch('token')
-      digest    = OpenSSL::Digest::Digest.new('sha256')
+      digest    = OpenSSL::Digest.new('sha256')
 
       signature == OpenSSL::HMAC.hexdigest(digest,
                                            api_key,
