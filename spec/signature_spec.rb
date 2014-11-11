@@ -12,11 +12,11 @@ describe MailgunWebhooks::Signature do
   }
 
   context 'when valid' do
-    it { should be_true }
+    it { should be true }
   end
 
   context 'when invalid' do
     before { options['token'] = 'notken' }
-    it { should be_false }
+    it { should be false }
   end
 end
